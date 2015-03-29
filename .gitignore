@@ -1,0 +1,8 @@
+# Read more at http://help.github.com/ignore-files/
+
+.DS_Store
+*.log
+/tmp/*
+/bin/*
+.env
+db/seeds.rb
