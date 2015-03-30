@@ -32,3 +32,5 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "json_spec"
 end
+
+gem "rails_12factor", group: [:production]
