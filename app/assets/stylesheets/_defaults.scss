@@ -1,0 +1,70 @@
+$red: #f44336;
+$orange: #ff9800;
+$yellow: #ffeb3b;
+$green: #4caf50;
+$blue: #2196f3;
+
+$grey-5: #fafafc;
+$grey-4: #c8c8ce;
+$grey-3: #909196;
+$grey-2: darken($grey-3, 10%);
+$grey-1: #3f3f42;
+$black:  #2a2c30;
+
+$font-family: 'Helvetica Neue', Helvetica, sans-serif;
+$line-height: 1.66;
+$heading-font-family: $font-family;
+$heading-font-weight: bold;
+$heading-line-height: 1.25;
+$monospace-font-family: 'Source Code Pro', Consolas, monospace;
+$h1: 2rem;
+$h2: 1.5rem;
+$h3: 1.25rem;
+$h4: 1rem;
+$h5: .875rem;
+$h6: .75rem;
+$normal-font-weight: 400;
+$bold-font-weight: bold;
+$space-1: .5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+$form-field-font-size: 1rem;
+$form-field-height: 2.25rem;
+$form-field-padding-y: .5rem;
+$form-field-padding-x: .5rem;
+$button-font-size: inherit;
+$button-font-weight: $normal-font-weight;
+$button-line-height: 1.125rem;
+$button-padding-y: $space-1;
+$button-padding-x: $space-2;
+$button-small-padding-y: .1rem;
+$button-small-padding-x: $space-1;
+$button-big-padding-y: $space-2;
+$button-big-padding-x: $space-3;
+$container-width: 64em;
+$shadow-color: rgba(0,0,0,0.24);
+$darken-1: rgba(0,0,0,.0625);
+$darken-2: rgba(0,0,0,.125);
+$darken-3: rgba(0,0,0,.25);
+$darken-4: rgba(0,0,0,.5);
+$border-width: 1px;
+$border-radius: 4px;
+$border-color: $darken-2;
+$hover-background-color: $darken-1;
+$link-color: $blue;
+$pre-background-color: $grey-4;
+$button-background-color: $blue;
+
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-lg: '(min-width: 64em)';
+
+@mixin size($size) {
+  height: $size;
+  width: $size;
+}
+
+@mixin elegance {
+  transition: all .28s cubic-bezier(.4,0,.2,1);
+}

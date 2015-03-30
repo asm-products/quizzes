@@ -1,16 +1,3 @@
-
-// Converted Variables
-
-$container-width: 64em !default;
-
-// Custom Media Query Variables
-
-$breakpoint-sm: '(min-width: 40em)' !default;
-$breakpoint-md: '(min-width: 52em)' !default;
-$breakpoint-lg: '(min-width: 64em)' !default;
-
-/* Basscss Grid */
-
 .container {
   max-width: $container-width;
   margin-left: auto;

@@ -1,16 +1,3 @@
-
-// Converted Variables
-
-$form-field-font-size: 1rem !default;
-$form-field-height: 2.25rem !default;
-$form-field-padding-y: .5rem !default;
-$form-field-padding-x: .5rem !default;
-
-// Custom Media Query Variables
-
-
-/* Basscss Base Forms */
-
 input,
 select,
 textarea,
@@ -33,35 +20,16 @@ input[type=time],
 input[type=url],
 input[type=week] {
   box-sizing: border-box;
+  width: 16em;
+  max-width: 95%;
   height: $form-field-height;
   padding: $form-field-padding-y $form-field-padding-x;
   vertical-align: middle;
   -webkit-appearance: none;
 }
 
-select {
-  box-sizing: border-box;
-  line-height: 1.75;
-  padding: $form-field-padding-y $form-field-padding-x;
-}
-
-select:not([multiple]) {
-  height: $form-field-height;
-  vertical-align: middle;
-}
-
 textarea {
   box-sizing: border-box;
   line-height: 1.75;
   padding: $form-field-padding-y $form-field-padding-x;
-}
-
-.fieldset-reset {
-  padding: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border: 0;
-}
-.fieldset-reset legend {
-  padding: 0;
 }
