@@ -1,2 +1,6 @@
 @import "defaults";
 @import "basscss/*";
+
+body {
+  background-color: $bg-color;
+}

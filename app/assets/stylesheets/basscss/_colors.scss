@@ -1,3 +1,23 @@
+.primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.fill-primary {
+  fill: $primary;
+}
+
+.accent {
+  color: $accent;
+}
+.bg-accent {
+  background-color: $accent;
+}
+.fill-accent {
+  fill: $accent;
+}
+
 .red {
   color: $red;
 }
@@ -6,16 +26,6 @@
 }
 .fill-red {
   fill: $red;
-}
-
-.yellow {
-  color: $yellow;
-}
-.bg-yellow {
-  background-color: $yellow;
-}
-.fill-yellow {
-  fill: $yellow;
 }
 
 .green {
@@ -28,13 +38,6 @@
   fill: $green;
 }
 
-.blue {
-  color: $blue;
-}
-.bg-blue {
-  background-color: $blue;
-}
-
 .white {
   color: #fff;
 }
@@ -43,16 +46,6 @@
 }
 .fill-white {
   fill: #fff;
-}
-
-.grey-5 {
-  color: $grey-5;
-}
-.bg-grey-5 {
-  background-color: $grey-5;
-}
-.fill-grey-5 {
-  fill: $grey-5;
 }
 
 .grey-4 {
@@ -90,11 +83,6 @@
 }
 
 .bg-darken-1 {
-  background-color: $darken-1;
-}
-
-.bg-darken-1-hover:hover {
-  @include elegance;
   background-color: $darken-1;
 }
 

@@ -1,18 +1,19 @@
-$red: #f44336;
-$orange: #ff9800;
-$yellow: #ffeb3b;
-$green: #4caf50;
-$blue: #2196f3;
+$red: #e53935;
+$green: #8bc34a;
 
-$grey-5: #fafafc;
+$primary: #3f51b5;
+$accent: #ffc107;
+
+$bg-color: #f2f8fc;
+
 $grey-4: #c8c8ce;
 $grey-3: #909196;
 $grey-2: darken($grey-3, 10%);
 $grey-1: #3f3f42;
 $black:  #2a2c30;
 
-$font-family: 'Helvetica Neue', Helvetica, sans-serif;
-$line-height: 1.66;
+$font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+$line-height: 1.7;
 $heading-font-family: $font-family;
 $heading-font-weight: bold;
 $heading-line-height: 1.25;
@@ -24,7 +25,7 @@ $h4: 1rem;
 $h5: .875rem;
 $h6: .75rem;
 $normal-font-weight: 400;
-$bold-font-weight: bold;
+$bold-font-weight: 700;
 $space-1: .5rem;
 $space-2: 1rem;
 $space-3: 2rem;
@@ -36,12 +37,6 @@ $form-field-padding-x: .5rem;
 $button-font-size: inherit;
 $button-font-weight: $normal-font-weight;
 $button-line-height: 1.125rem;
-$button-padding-y: $space-1;
-$button-padding-x: $space-2;
-$button-small-padding-y: .1rem;
-$button-small-padding-x: $space-1;
-$button-big-padding-y: $space-2;
-$button-big-padding-x: $space-3;
 $container-width: 64em;
 $shadow-color: rgba(0,0,0,0.24);
 $darken-1: rgba(0,0,0,.0625);
@@ -52,9 +47,9 @@ $border-width: 1px;
 $border-radius: 4px;
 $border-color: $darken-2;
 $hover-background-color: $darken-1;
-$link-color: $blue;
+$link-color: $primary;
 $pre-background-color: $grey-4;
-$button-background-color: $blue;
+$button-background-color: $primary;
 
 $breakpoint-sm: '(min-width: 40em)';
 $breakpoint-md: '(min-width: 52em)';

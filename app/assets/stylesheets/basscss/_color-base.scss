@@ -1,6 +1,5 @@
 body {
   color: $black;
-  background-color: white;
 }
 
 a {
@@ -19,7 +18,5 @@ pre, code {
 
 hr {
   border: 0;
-  border-bottom-style: solid;
-  border-bottom-width: $border-width;
-  border-bottom-color: $border-color;
+  border-bottom: $border-width solid $border-color;
 }
