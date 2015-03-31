@@ -2,6 +2,11 @@
 
 <article class="center p2">
   <h1 class="mt1">Quizzes</h1>
-  <p>A new product on <a href="https://assembly.com/quizzes">Assembly</a>.</p>
-  <%= link_to "Sign Up", new_teacher_registration_path, class: "button mt1" %>
+
+  <% if current_teacher %>
+    <p><span class="green">Hey there! You're signed in.</span> <%= link_to "Sign out?", destroy_teacher_session_path, method: :delete %></p>
+  <% else %>
+    <p>A new product on <a href="https://assembly.com/quizzes">Assembly</a>.</p>
+    <%= link_to "Sign Up", new_teacher_registration_path, class: "button" %>
+  <% end %>
 </article>

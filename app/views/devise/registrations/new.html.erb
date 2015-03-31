@@ -1,29 +1,19 @@
-<h2>Sign up</h2>
+<%= render "shared/nav" %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<article class="md-col-5 sm-col-11 mx-auto">
+  <%= link_to "Log in", new_session_path(resource_name), class: "button button-small bg-white primary right relative mt1" %>
+  <h1 class="bold mb0">Sign up</h1>
+  <hr class="mt1 mb2">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @validatable %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, class: "field-light" %>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <%= f.label :password %><small class="ml1">(<%= @minimum_password_length %> characters minimum)</small>
+    <%= f.password_field :password, autocomplete: "off", class: "field-light" %>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+    <%= f.submit "Sign up", class: "button mt1" %>
+  <% end %>
+</article>

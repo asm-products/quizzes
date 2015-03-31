@@ -1,26 +1,26 @@
-<h2>Log in</h2>
+<%= render "shared/nav" %>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+<article class="md-col-5 sm-col-11 mx-auto">
+  <%= link_to "Sign up", new_registration_path(resource_name), class: "button button-small bg-white primary right relative mt1" %>
+  <h1 class="bold mb0">Log in</h1>
+  <hr class="mt1 mb2">
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email, autofocus: true, class: "field-light" %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, autocomplete: "off", class: "field-light" %>
+
+    <div class="block">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
-  <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
+    <%= f.submit "Log in", class: "button mt1" %>
 
-<%= render "devise/shared/links" %>
+    <small class="mt1 block"><%= link_to "Forgot your password?", new_password_path(resource_name) %></small>
+  <% end %>
+</article>
