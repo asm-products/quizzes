@@ -3,3 +3,9 @@
     <%= link_to "Home", root_url, class: "white" %>
   </div>
 </nav>
+
+<% unless flash.empty? %>
+<% flash.each do |key, value| %>
+  <%= react_component("Flash", message: value.to_s, color: key.to_s) %>
+<% end %>
+<% end %>
